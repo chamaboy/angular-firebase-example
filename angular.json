@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cat-hunting"
+    }
+  },
+  "defaultProject": "cat-hunting",
+  "cli": {
+    "analytics": "44201107-604f-4da3-b502-031b5898f41e"
+  }
 }

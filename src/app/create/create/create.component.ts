@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -19,11 +19,19 @@ export class CreateComponent implements OnInit {
     ]]
   });
 
+  get nameControl() {
+    return this.form.get('name') as FormControl;
+  }
+
   constructor(
     private fb: FormBuilder
   ) { }
 
   ngOnInit(): void {
+  }
+
+  submit() {
+    console.log(this.form.value);
   }
 
 }

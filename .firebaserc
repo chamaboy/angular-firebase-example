@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "gitpet-297a5"
+  },
+  "targets": {
+    "gitpet-297a5": {
+      "hosting": {
+        "cat-hunting": [
+          "gitpet-297a5"
+        ]
+      }
+    }
   }
 }

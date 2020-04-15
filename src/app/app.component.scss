@@ -1,9 +1,14 @@
-footer {
+:host {
   text-align: center;
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(black, 0.12);
 }
 
 p {
   font-size: 12px;
-  text-align: center;
-  color: rgba(black, .6);
+  color: rgba(black, 0.6);
 }

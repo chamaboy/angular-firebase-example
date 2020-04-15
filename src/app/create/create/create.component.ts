@@ -23,7 +23,7 @@ export class CreateComponent implements OnInit {
     slidesPerView: 3,
   };
 
-  selectedPetId: 0;
+  selectedPetId = 0;
 
   form = this.fb.group({
     name: ['', [Validators.required, Validators.maxLength(40)]],
@@ -50,7 +50,7 @@ export class CreateComponent implements OnInit {
       petImageId: this.selectedPetId,
       level: 1,
       exp: 0,
-      trainerId: this.authService.uId,
+      trainerId: this.authService.uid,
     });
   }
 }

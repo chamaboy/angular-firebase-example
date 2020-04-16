@@ -51,6 +51,7 @@ export class CreateComponent implements OnInit {
       level: 1,
       exp: 0,
       trainerId: this.authService.uid,
+      ownerGitHubId: this.authService.gitHubId,
     });
   }
 }
